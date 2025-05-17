@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+     --color-primary:#f53838;
+     --color-secoundary:rgba(245,56,56,0.35);
+     --color-primary-text:#4f5665;
+     --color-heading-text:#0B132A;
+     --font-primary: "Rubik", sans-serif;
+
+}
+
+@layer {
+     .section-container{
+          @apply max-w-[1440] container mx-auto px-4 py-16
+     }
+}
+
+.swiper-pagination-bullet{
+     width: 15px;
+     height: 15px;
+     background: aliceblue;
+     opacity: 1;
+     margin: 0 5px !important;
+
+}
+
+.swiper-pagination-bullet-active{
+     background:var(--color-primary);
+     opacity: 1;
+     transform: scale(1.2);
+     transition: transform 0.2s ;
+}
